@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Web Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Add this right after the opening <body> tag -->
+    <button class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Add this before the sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <!-- Fixed Header -->
+        <div class="sidebar-header">
+            <div class="logo-container">
+                <span class="logo-text">EWS</span>
+            </div>
+            <button class="toggle-sidebar" id="toggleSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="sidebar-content">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#services"><i class="fas fa-cogs"></i> <span>Services</span></a></li>
+                    <li><a href="#portfolio"><i class="fas fa-briefcase"></i> <span>Portfolio</span></a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> <span>About</span></a></li>
+                    <li><a href="#blog"><i class="fas fa-blog"></i> <span>Blog</span></a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="user-section">
+                <div class="user-profile">
+                    <img src="default-avatar.png" alt="User Avatar">
+                    <div class="user-info">
+                        <span class="user-name">Guest User</span>
+                        <span class="user-status">Not logged in</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notification-center">
+                <div class="notification-header">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                    <span class="notification-badge">3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Footer -->
+        <div class="sidebar-footer">
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+            <div class="cta-buttons">
+                <button class="cta-primary">Get Started</button>
+                <button class="cta-secondary">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="export default class m extends baseclassName {
+            
+        };
+        ">
+            <h1>Elite Web Solutions</h1>
+            <p>Empowering Digital Excellence</p>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button class="login-btn" onclick="openLoginModal()">Login</button>
+            <button class="signup-btn" onclick="openSignupModal()">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="welcome-text">Welcome to</span>
+                <span class="company-name">Elite Web Solutions</span>
+            </h1>
+            <p class="hero-subtitle">Transforming Ideas into Digital Excellence</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- After the hero section, add these sections -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with the latest technologies</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that work perfectly on all devices</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your website's visibility in search results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="subtitle">Who We Are</span>
+                    <p class="about-description">Elite Web Solutions is your trusted partner in digital excellence. With a passion for innovation and creativity, we craft stunning digital experiences that leave lasting impressions.</p>
+                    <p class="about-highlight">Our mission is to transform your digital presence into a powerful business asset.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Team</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Focused</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Innovative Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Explore Our Portfolio</h2>
+            <p class="portfolio-description">From concept to completion, Elite Web Solutions has helped businesses achieve their digital goals. Each project represents our commitment to excellence and innovation.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="E-Commerce Project">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Transforming retail businesses with modern digital solutions</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Corporate Website">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Creating impactful digital presence for businesses</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Mobile App">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Design</h3>
+                        <p>Innovative solutions for the mobile-first world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2>Latest Updates</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="blog1.jpg" alt="Latest Updates">
+                    <div class="blog-content">
+                        <span class="blog-date">March 15, 2024</span>
+                        <h3>Latest Updates from Elite Web Solutions</h3>
+                        <p>Stay ahead with the latest trends and insights in digital solutions. Discover how we're transforming businesses through innovative web technologies...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="blog2.jpg" alt="Digital Transformation">
+                    <div class="blog-content">
+                        <span class="blog-date">March 10, 2024</span>
+                        <h3>Digital Transformation in 2024</h3>
+                        <p>Explore how businesses are leveraging digital solutions to stay competitive in today's fast-paced market...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="blog3.png" alt="Web Development Trends">
+                    <div class="blog-content">
+                        <span class="blog-date">March 5, 2024</span>
+                        <h3>Emerging Web Development Trends</h3>
+                        <p>Discover the latest technologies and methodologies shaping the future of web development...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elite Web Solutions</h3>
+                    <p class="tagline">Empowering with Elite Web Solution</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +256 775516473</p>
+                    <p><i class="fas fa-envelope"></i>elitewebsolution.ug@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kisaasi.kampala </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Web Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+</body>
+</html>
